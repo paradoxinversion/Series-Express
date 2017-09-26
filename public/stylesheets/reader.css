@@ -1,0 +1,29 @@
+.storypage-header{
+  border-bottom: 1px solid black;
+}
+.story-title{
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.author-name{
+  font-style: italic;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+/*
+  Body
+*/
+.story-body{
+  font-family: "Crimson Text", serif;
+  margin-bottom: 1em;
+  padding: 0 1em;
+  text-indent: 1rem;
+}
+
+.story-body > p{
+  margin-bottom: 4px;
+
+}

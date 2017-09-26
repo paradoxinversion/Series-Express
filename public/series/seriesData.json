@@ -1,0 +1,20 @@
+[
+  {
+    "author": "Test Author",
+    "entry-name": "A story with a name",
+    "content": "/part-1.txt",
+    "part" : 0
+  },
+  {
+    "author": "Test Author",
+    "entry-name": "The second part to the story",
+    "content": "/part-2.txt",
+    "part" : 1
+  },
+  {
+    "author": "Test Author",
+    "entry-name": "Fin-- A Finale",
+    "content": "/part-3.txt",
+    "part" : 2
+  }
+]

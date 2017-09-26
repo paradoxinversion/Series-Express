@@ -1,0 +1,110 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Open Sans", sans-serif;
+}
+h1{
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+strong{
+  font-weight: 600;
+}
+
+em{
+  font-style: italic;
+}
+textarea{
+  width: 100%;
+}
+
+button{
+  /*min-height: 18px;*/
+  background-color: white;
+  border: 3px solid #212121;
+  border-radius: 8px;
+  font-size: 18px;
+}
+
+.btn-primary{
+  /*background-color: #0071bc;*/
+  color: #212121;
+  border-color: #212121;
+}
+
+.btn-group-start{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.btn-group{
+  border-radius: 0;
+  border-left-width: 0;
+  border-right-width: 0;
+}
+
+.btn-group-end{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+/*
+  Main Wrapper
+*/
+.main-wrapper{
+  display: flex;
+  flex-direction: column;
+  max-width: 850px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+/*
+  Common Header Styles
+*/
+.main-header{
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.header-wrapper{
+  display: inline-block;
+}
+
+
+/*
+  "Favorite" Action Styles
+*/
+.like{
+  color: gray;
+  padding: 0 0.5em;
+  vertical-align: sub;
+}
+
+.like:hover{
+  color: #ff69b4;
+}
+
+/*
+  Footer
+*/
+.main-footer{
+  margin-top: auto;
+  padding: 8px 1em;
+  border-top: 2px solid #212121;
+}
+@media(min-width: 450px){
+/*
+  Header
+*/
+
+  .main-header{
+    padding-left: 1em;
+    margin-top: 0.5em;
+    text-align: left;
+  }
+
+}

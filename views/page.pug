@@ -1,0 +1,19 @@
+extends layout
+
+block append head
+  link(rel='stylesheet', href='/stylesheets/reader.css')
+  link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
+
+block content
+  .main-wrapper
+    header.main-header.storypage-header
+      .header-wrapper
+        h1.story-title #{storyTitle}
+        h3.author-name
+          | By #{author} 
+          a(href="#")
+            i.like.material-icons favorite
+    section.story-body
+      p !{content}
+    footer.main-footer
+      p The footer
