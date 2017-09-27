@@ -1,11 +1,16 @@
 extends layout
-
+block append head
+  link(rel='stylesheet', href='/stylesheets/index.css')
 block content
-  h1= title
-  p Welcome to #{title}
-  ul
-    each val in parts
-      li
-        //-a(href="public/series"+val["content"]) #{val["entry-name"]}
-        a(href="/reader") #{val["entry-name"]}
-  a(href="./reader") Jump to Reader
+  .main-wrapper
+    h1= title
+    p Welcome to #{title}
+    .part-wrapper
+      h2.parts-header Parts in this Series
+      ul.parts-list
+        li 
+          a(href="./reader") Start from the Beginning
+        each val in parts
+          li
+            //-a(href="public/series"+val["content"]) #{val["entry-name"]}
+            a(href="/reader?part=" + val["part"]) Part #{val["part"]+1}: #{val["entry-name"]}

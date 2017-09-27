@@ -1,3 +1,4 @@
+
 .storypage-header{
   border-bottom: 1px solid black;
 }
@@ -24,6 +25,19 @@
 }
 
 .story-body > p{
-  margin-bottom: 4px;
+  font-size: 16px;
+  line-height: 1.2rem;
+  margin-bottom: 8px;
 
+}
+.series-nav{
+  padding-left: 10px;
+}
+
+.main-footer{
+  display: flex;
+}
+
+.series-footer-nav{
+  margin-left: auto;
 }

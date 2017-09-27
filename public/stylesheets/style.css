@@ -1,8 +1,15 @@
 *{
   box-sizing: border-box;
 }
-
+a{
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+  background-color: #BCBDBD;
+}
 body{
+  background-color: #ECEDED;
   font-family: "Open Sans", sans-serif;
 }
 h1{
@@ -10,7 +17,11 @@ h1{
   font-weight: 300;
   margin-bottom: 8px;
 }
-
+h2{
+  font-size: 1.6rem;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
 strong{
   font-weight: 600;
 }

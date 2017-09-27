@@ -3,7 +3,7 @@ extends layout
 block append head
   link(rel='stylesheet', href='/stylesheets/reader.css')
   link(rel='stylesheet', href='https://fonts.googleapis.com/icon?family=Material+Icons')
-
+  link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Crimson+Text" )
 block content
   .main-wrapper
     header.main-header.storypage-header
@@ -16,4 +16,13 @@ block content
     section.story-body
       p !{content}
     footer.main-footer
-      p The footer
+      a(href="/") To Series Front
+      .series-footer-nav
+        -var total = totalParts-1;
+        if part > 0
+          -var previousPart = parseInt(part)-1;
+          a.series-nav(href="./reader?part="+previousPart) Previous Part
+        if part < total
+          -var nextPart = parseInt(part)+1;
+          a.series-nav(href="./reader?part="+nextPart) Next Part
+        

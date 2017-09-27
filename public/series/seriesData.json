@@ -1,19 +1,19 @@
 [
   {
-    "author": "Test Author",
-    "entry-name": "A story with a name",
+    "author": "Jedai Saboteur",
+    "entry-name": "Hardware",
     "content": "/part-1.txt",
     "part" : 0
   },
   {
-    "author": "Test Author",
-    "entry-name": "The second part to the story",
+    "author": "Jedai Saboteur",
+    "entry-name": "Magic Bullets",
     "content": "/part-2.txt",
     "part" : 1
   },
   {
-    "author": "Test Author",
-    "entry-name": "Fin-- A Finale",
+    "author": "Jedai Saboteur",
+    "entry-name": "Professional",
     "content": "/part-3.txt",
     "part" : 2
   }
