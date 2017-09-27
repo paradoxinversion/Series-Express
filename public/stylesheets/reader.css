@@ -2,6 +2,10 @@
 .storypage-header{
   border-bottom: 1px solid black;
 }
+
+.like-a:hover{
+  background-color: rgba(0, 0, 0, 0);
+}
 .story-title{
   font-size: 2rem;
   font-weight: 300;
@@ -31,13 +35,13 @@
 
 }
 .series-nav{
-  padding-left: 10px;
-}
-
-.main-footer{
-  display: flex;
+  padding: 5px;
 }
 
 .series-footer-nav{
   margin-left: auto;
+}
+
+.main-footer > a{
+  padding: 5px;
 }

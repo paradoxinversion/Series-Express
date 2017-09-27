@@ -1,8 +1,8 @@
-var express = require('express');
-var fs = require('fs');
-var router = express.Router();
-var currentEntry = 0;
-/* GET reader page. */
+const express = require('express');
+const fs = require('fs');
+const router = express.Router();
+let currentEntry = 0;
+
 router.get('/', function(req, res, next) {
   if (req.query.part){
     currentEntry = req.query.part;
@@ -20,9 +20,6 @@ router.get('/', function(req, res, next) {
     //Redirect if there's no query string
     res.redirect("?part=0");
   }
-
 });
-
-
 
 module.exports = router;

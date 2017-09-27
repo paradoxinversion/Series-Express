@@ -1,13 +1,16 @@
-
-.main-wrapper{
+.index-header{
+  align-self: center;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
   text-align: center;
+  width: 300px;
+  border-bottom: 2px solid black;
 }
 .part-wrapper{
-  text-align: left;
+  text-align: center;
 }
 
 .parts-header{
-  border-bottom: 2px solid black;
   display: inline-block;
 }
 
