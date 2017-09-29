@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  .main-wrapper
+    p Please Log In
+    form(action="/login", method="post", id="login-form")
+      input(name="username", placeholder="username", form="login-form")
+      input(name="password", placeholder="password", type="password", form="login-form")
+      button(form="login-form", type="submit") login

@@ -1,4 +1,3 @@
-const fs = require("fs");
 const getParts = require("../public/javascripts/magic.js").getParts;
 const express = require('express');
 const router = express.Router();

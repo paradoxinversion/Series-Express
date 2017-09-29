@@ -1,0 +1,6 @@
+extends layout
+
+block content
+  p Welcome, #{user}
+  form(action="/logout", method="post")
+    button Logout

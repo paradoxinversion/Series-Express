@@ -7,7 +7,9 @@ const bodyParser = require('body-parser');
 
 const index = require('./routes/index');
 const reader = require('./routes/reader');
-
+const login = require("./routes/login");
+const logout = require("./routes/logout");
+const dashboard = require("./routes/dashboard");
 const app = express();
 
 // view engine setup
@@ -19,12 +21,15 @@ app.set('view engine', 'pug');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.text());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', index);
 app.use("/reader", reader);
-
+app.use("/login", login);
+app.use("/dashboard", dashboard);
+app.use("/logout", logout);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
